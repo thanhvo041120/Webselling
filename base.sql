@@ -29,12 +29,12 @@ CREATE TABLE receipt
 
 
 
--- INSERT INTO client
---   (username, password, fullname, email,isadmin)
--- VALUES
---   ('admin', 12345, 'leductaiqnam2@gmail.com'),
---   ('tai', 12345, 'leductaiqnam@gmail.com'),
---   ('tai1', 12345, 'leductai2@gmail.com');
+INSERT INTO client
+  (username, password, email)
+VALUES
+  ('admin', 12345, 'leductaiqnam2@gmail.com'),
+  ('tai', 12345, 'leductaiqnam@gmail.com'),
+  ('tai1', 12345, 'leductai2@gmail.com');
 
 -- INSERT INTO post
 --   (id, name, anhmattruoc, giabinhthuong, description)
