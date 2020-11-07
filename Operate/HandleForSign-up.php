@@ -12,7 +12,7 @@ $count = mysqli_num_rows($query);
 if ($count == 0) {
   $_sql = "insert into client(username, password, email) values ('" . $_POST['username'] . "','" . $_POST['password'] . "','" . $_POST['email'] . "')";
   $_query = mysqli_query($conn, $_sql);
-  header("location: http://localhost:8080/sellweb/watch-selling/log-in.php");
+  header("location: https://watch-selling.herokuapp.com/log-in.php");
 } else {
-  header("location: http://localhost:8080/sellweb/watch-selling/sign-up.php");
+  header("location: https://watch-selling.herokuapp.com/sign-up.php");
 }

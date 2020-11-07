@@ -10,8 +10,8 @@ $query = mysqli_query($conn, $sql);
 $count = mysqli_num_rows($query);
 if ($count == 1) {
   $isAuth = "true";
-  header("location: http://localhost:8080/sellweb/watch-selling/logout.php?isAuth=" . $isAuth);
+  header("location: https://watch-selling.herokuapp.com/logout.php?isAuth=" . $isAuth);
 } else {
   $isAuth = "false";
-  header("location: http://localhost:8080/sellweb/watch-selling/log-in.php?isAuth=" . $isAuth);
+  header("location: https://watch-selling.herokuapp.com/log-in.php?isAuth=" . $isAuth);
 }
